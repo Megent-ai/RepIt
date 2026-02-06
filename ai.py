@@ -1,0 +1,9 @@
+from google import genai
+# from dotenc
+# The client gets the API key from the environment variable `GEMINI_API_KEY`.
+client = genai.Client()
+
+response = client.models.generate_content(
+    model="gemini-2", contents="Explain how AI works in a few words"
+)
+print(response.text)
