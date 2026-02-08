@@ -17,6 +17,8 @@ students = {
     "7684908170"
 }
 
+course = {}
+
 
 def who(user_id: str) -> str:
     """
@@ -36,3 +38,4 @@ def who(user_id: str) -> str:
         return "__Student__"
     else:
         return "__Unknown__"
+
